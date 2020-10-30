@@ -1,0 +1,10 @@
+#!/bin/bash
+myfunc()
+{
+   echo hai
+   return 1 
+   echo bye
+}
+myfunc
+echo "Exit status of function = $?"
+ 
