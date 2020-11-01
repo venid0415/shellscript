@@ -1,0 +1,11 @@
+#!/bin/bash
+create_scrit()
+{
+     i=$(ls -1 scrit*.sh |tail -1 |sed -e 's/scrit//' -e 's/.sh//')
+     i=$((i+1))
+     echo '#!/bin/bash' >scrit$i.sh
+     chmod +x scrit$i.sh
+     echo scrit$i.sh
+ }
+
+
